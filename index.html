@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>محطة نفطال قاسم مشطن – علاء الدين</title>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#070d1b">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800;900&family=Tajawal:wght@400;500;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070d1b;--navy:#0c1630;--panel:#101d3a;--line:#223259;--gold:#f5b81c;--gold2:#ffd96a;--blue:#2b7de0;--green:#22b573;--purple:#8a63e8;--teal:#16b3b3;--red:#e5534b;--tx:#eef2fb;--dim:#9fb0d0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Tajawal',sans-serif;min-height:100vh}
+.n{font-family:'Rajdhani','Tajawal',sans-serif;font-weight:700;font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+.wrap{max-width:1280px;margin:0 auto;padding:14px}
+/* hero */
+.hero{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,#0a1530,#050a16);min-height:230px}
+.hero svg.scene{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:26px 28px;min-height:230px}
+.brand{display:flex;gap:16px;align-items:center}
+.logo{background:#fff;border-radius:12px;padding:8px 14px;box-shadow:0 8px 26px #0009;border-bottom:5px solid var(--gold)}
+.logo svg{display:block;height:34px;width:auto}
+h1{font-family:'Cairo';font-weight:900;font-size:clamp(20px,3.2vw,32px);margin:0;color:var(--gold2);text-shadow:0 2px 12px #000a}
+.sub{margin:4px 0 0;color:var(--dim);font-size:14px}
+.clock{background:#07102288;backdrop-filter:blur(8px);border:1px solid #2c4274;border-radius:14px;padding:10px 16px;text-align:center}
+.clock b{display:block;font-size:26px;color:#fff;line-height:1.1}
+.clock span{font-size:13px;color:var(--dim)}
+/* toolbar */
+.bar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0;padding:10px;background:#0b1530ee;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px}
+.btn{border:0;border-radius:10px;padding:10px 16px;font:700 14px 'Tajawal';color:#fff;cursor:pointer;display:flex;gap:8px;align-items:center;transition:transform .12s,filter .12s}
+.btn:hover{filter:brightness(1.12)}.btn:active{transform:scale(.97)}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.b-green{background:linear-gradient(#25bf7c,#13894f)}.b-blue{background:linear-gradient(#3487ea,#1b58b0)}.b-gold{background:linear-gradient(#f7c230,#c88f0a);color:#1b1304}.b-red{background:linear-gradient(#ee605a,#b0342e)}
+.btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sp{flex:1}
+.saved{font-size:13px;color:var(--dim)}
+/* sections */
+.sec{margin-top:18px;border:1px solid var(--line);border-radius:18px;background:var(--navy);overflow:hidden;--c:var(--green)}
+.sec-h{display:flex;align-items:center;gap:12px;padding:13px 18px;background:linear-gradient(90deg,color-mix(in srgb,var(--c) 38%,#0c1630),var(--navy));border-bottom:1px solid var(--line)}
+.sec-h i{width:6px;height:26px;border-radius:3px;background:var(--c)}
+.sec-h h2{margin:0;font:800 18px 'Cairo'}
+.sec-h small{color:var(--dim);font-size:13px}
+.cols{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:14px;padding:14px}
+@media(max-width:900px){.cols{grid-template-columns:1fr 1fr}.cols .diff{grid-column:1/-1}}
+@media(max-width:560px){.cols{grid-template-columns:1fr}.wrap{padding:10px}}
+.tbl{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tbl h3{margin:0;padding:10px 14px;font:800 14px 'Cairo';border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.tbl h3 em{font-style:normal;font-size:12px;font-weight:500;color:var(--dim)}
+.new h3{color:var(--c)}.old h3{color:#7fb2f5}
+.rows{padding:10px 12px;display:grid;gap:7px}
+.r{display:flex;align-items:center;gap:9px}
+.r b{flex:none;width:26px;height:26px;border-radius:8px;background:color-mix(in srgb,var(--c) 30%,#0c1630);color:#fff;display:grid;place-items:center;font-size:12px}
+.old .r b{background:#1d3d70}
+input{width:100%;background:#f4f7fd;color:#0b1426;border:0;border-radius:9px;padding:9px 10px;font:700 16px 'Rajdhani';text-align:center;direction:ltr}
+input[readonly]{background:#16264a;color:var(--gold2)}
+textarea{width:100%;min-height:120px;background:#0a1430;color:var(--tx);border:1px solid var(--line);border-radius:12px;padding:12px;font:15px 'Tajawal';resize:vertical}
+.sum{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-top:1px dashed var(--line);color:var(--dim);font-size:14px}
+.sum .n{font-size:20px;color:#fff}
+.diff{background:linear-gradient(180deg,#14234a,#0e1a38)}
+.drow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 14px;margin-top:10px;font-size:14px;color:var(--dim)}
+.drow input{max-width:130px}
+.res{margin:14px;padding:14px;border-radius:12px;text-align:center;background:linear-gradient(135deg,#3a2a08,#1b1305);border:1px solid #7a5714}
+.res span{font-size:13px;color:var(--gold2)}
+.res .n{display:block;font-size:30px;color:#fff;margin-top:2px}
+.res small{color:#b79f66;font-size:12px}
+/* stock */
+.stock{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:14px}
+@media(max-width:1100px){.stock{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.stock{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.stock{grid-template-columns:1fr}}
+.item{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;padding:14px}
+.item h3{margin:0 0 10px;font:800 15px 'Cairo';display:flex;align-items:center;gap:8px}
+.item h3 svg{width:22px;height:22px;stroke:var(--c);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.two label{font-size:12px;color:var(--dim);display:block;margin-bottom:3px}
+.item .sum{padding:10px 0 0;margin-top:10px}
+/* grand */
+.grand{margin-top:18px;border-radius:20px;border:1px solid #7a5714;background:radial-gradient(700px 260px at 50% -30%,#f5b81c33,transparent 70%),linear-gradient(160deg,#261a08,#110b04);padding:22px}
+.grand h2{margin:0 0 16px;text-align:center;font:900 20px 'Cairo';color:var(--gold2)}
+.gbody{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+@media(max-width:820px){.gbody{grid-template-columns:1fr}}
+.gi{display:flex;justify-content:space-between;align-items:center;padding:9px 4px;border-bottom:1px solid #ffffff14;color:#e8dcc0;font-size:15px}
+.gi span{display:flex;gap:9px;align-items:center}.gi i{width:10px;height:10px;border-radius:50%}
+.gi .n{font-size:18px;color:#fff}
+.gi.sub2{color:var(--gold2);font-weight:700;background:#ffffff08;border-radius:8px;border:0;margin:4px 0}
+.gt{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:1px solid #f5b81c66;border-radius:16px;background:linear-gradient(#3e2c0c,#1a1204);padding:22px}
+.gt span{color:var(--gold2);font-weight:700}
+.gt .n{font-size:clamp(34px,6vw,52px);color:#fff;text-shadow:0 0 28px #f5b81c66;line-height:1.2}
+.gt small{color:#b79f66}
+/* bottom */
+.bot{display:grid;grid-template-columns:1.3fr 1fr;gap:14px;margin-top:18px}
+@media(max-width:820px){.bot{grid-template-columns:1fr}}
+.card{background:var(--navy);border:1px solid var(--line);border-radius:18px;padding:16px}
+.card h3{margin:0 0 12px;font:800 16px 'Cairo';color:var(--gold2)}
+.st{display:flex;justify-content:space-between;align-items:center;padding:9px 2px;border-bottom:1px solid var(--line);color:var(--dim);font-size:14px}
+.st b{color:#fff;font-size:17px}
+footer{text-align:center;color:#62749b;font-size:12px;padding:20px 0 8px}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,30px);opacity:0;background:#0f2a1d;border:1px solid var(--green);color:#d7ffe9;padding:11px 20px;border-radius:12px;font-weight:700;transition:.25s;z-index:60;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:70;padding:20px}
+.modal.on{display:grid}
+.mbox{background:var(--navy);border:1px solid var(--line);border-radius:16px;padding:22px;max-width:380px;text-align:center}
+.mbox p{margin:0 0 18px;font-size:16px}.mbox .btn{display:inline-flex;margin:0 5px}
+@media print{body{background:#fff;color:#000}.bar,.toast,.modal,.hero svg.scene{display:none}.hero{background:#fff;min-height:0;border:0}.hero-in{min-height:0}h1,.sub,.clock *{color:#000!important;text-shadow:none}.sec,.card,.grand,.tbl,.item,.diff,.res,.gt{background:#fff!important;color:#000!important;border-color:#bbb!important;break-inside:avoid}.sec-h{background:#eee!important}*{color:#000!important}input,textarea{background:#fff!important;border:1px solid #aaa}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<svg class="scene" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a1736"/><stop offset=".6" stop-color="#2a2150"/><stop offset="1" stop-color="#d9622b"/></linearGradient><linearGradient id="cn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5b81c"/><stop offset="1" stop-color="#c88f0a"/></linearGradient></defs>
+<rect width="1200" height="260" fill="url(#sk)"/>
+<g fill="#fff" opacity=".6"><circle cx="90" cy="30" r="1.5"/><circle cx="260" cy="60" r="1.2"/><circle cx="520" cy="25" r="1.5"/><circle cx="780" cy="50" r="1.2"/><circle cx="1010" cy="28" r="1.5"/></g>
+<rect y="215" width="1200" height="45" fill="#0a0f1d"/>
+<rect x="60" y="96" width="560" height="22" rx="4" fill="url(#cn)"/><rect x="60" y="118" width="560" height="6" fill="#1b58b0"/>
+<g fill="#cfd7ea"><rect x="110" y="124" width="14" height="91"/><rect x="556" y="124" width="14" height="91"/></g>
+<g><rect x="215" y="150" width="58" height="65" rx="6" fill="#17306a"/><rect x="225" y="160" width="38" height="22" rx="3" fill="#e9f2ff"/><rect x="215" y="190" width="58" height="6" fill="#f5b81c"/>
+<rect x="395" y="150" width="58" height="65" rx="6" fill="#17306a"/><rect x="405" y="160" width="38" height="22" rx="3" fill="#e9f2ff"/><rect x="395" y="190" width="58" height="6" fill="#22b573"/></g>
+<g><rect x="720" y="120" width="300" height="95" fill="#14224a"/><rect x="710" y="108" width="320" height="16" fill="url(#cn)"/><rect x="745" y="142" width="70" height="73" fill="#ffd96a" opacity=".85"/><rect x="840" y="142" width="150" height="45" fill="#8fc2ff" opacity=".6"/></g>
+<rect x="1080" y="60" width="10" height="155" fill="#cfd7ea"/><rect x="1040" y="48" width="90" height="42" rx="8" fill="#fff"/><rect x="1040" y="82" width="90" height="8" fill="#f5b81c"/><text x="1085" y="73" text-anchor="middle" font-family="Cairo,sans-serif" font-weight="900" font-size="18" fill="#1b2f6e">NAFTAL</text>
+</svg>
+<div class="hero-in">
+<div class="brand">
+<div class="logo"><svg viewBox="0 0 150 34" aria-label="NAFTAL"><text x="0" y="27" font-family="Cairo,Arial Black,sans-serif" font-weight="900" font-size="30" fill="#1b2f6e" textLength="150" lengthAdjust="spacingAndGlyphs">NAFTAL</text></svg></div>
+<div><h1>محطة نفطال قاسم مشطن – علاء الدين</h1><p class="sub">إدارة المخزون والحسابات اليومية + المجموع الكلي الشامل</p></div>
+</div>
+<div class="clock"><b class="n" id="clk">--:--:--</b><span id="dte">--</span></div>
+</div>
+</header>
+
+<div class="bar">
+<button class="btn b-green" id="bSave"><svg viewBox="0 0 24 24"><path d="M5 3h11l4 4v14H5z"/><path d="M8 3v6h7V3M8 21v-7h8v7"/></svg>حفظ البيانات</button>
+<button class="btn b-blue" id="bPdf"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4v-8h16v8h-2M7 14h10v7H7z"/></svg>طباعة / PDF</button>
+<button class="btn b-gold" id="bXls"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>تصدير Excel</button>
+<button class="btn b-red" id="bClr"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>مسح الكل</button>
+<div class="sp"></div><span class="saved" id="savedAt">لم يتم الحفظ بعد</span>
+</div>
+
+<main id="app"></main>
+
+<section class="grand" id="grand">
+<h2>💰 المجموع الكلي الشامل</h2>
+<div class="gbody"><div id="glist"></div>
+<div class="gt"><span>المجموع الكلي الشامل</span><b class="n" id="gTot">0</b><small>دج (دينار جزائري)</small></div></div>
+</section>
+
+<div class="bot">
+<div class="card"><h3>📝 ملاحظات</h3><textarea id="notes" placeholder="اكتب ملاحظاتك هنا..."></textarea></div>
+<div class="card"><h3>📈 إحصائيات اليوم</h3>
+<div class="st"><span>إجمالي المبيعات اليوم</span><b class="n" id="sTot">0</b></div>
+<div class="st"><span>مبيعات الوقود</span><b class="n" id="sFuel">0</b></div>
+<div class="st"><span>مبيعات المخزون</span><b class="n" id="sStock">0</b></div>
+<div class="st"><span>عدد العمليات</span><b class="n" id="sOps">0</b></div>
+<div class="st"><span>آخر تحديث</span><b class="n" id="sUpd">--:--</b></div></div>
+</div>
+<footer>جميع الحقوق محفوظة – محطة نفطال قاسم مشطن – علاء الدين © 2026</footer>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="mbox"><p>هل تريد مسح جميع البيانات؟ سيتم إرجاع الأسعار إلى قيمها الأصلية.</p><button class="btn b-red" id="yes">نعم، امسح الكل</button><button class="btn b-blue" id="no">إلغاء</button></div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const num=v=>{const x=parseFloat(v);return isNaN(x)?0:x};
+const fmt=v=>(Math.round(v*100)/100).toLocaleString('en-US');
+const KEY='naftal-station-v1';
+// المعادلات والأسعار الأصلية دون تغيير: الفرق = جديد − قديم، النتيجة = الفرق × السعر
+const FUELS=[
+ {id:'gz',name:'المازوت',en:'Gazoil',c:'#22b573',nl:6,ol:6,price:3100,lbl:'Gazoil'},
+ {id:'es',name:'البنزين',en:'Essence',c:'#8a63e8',nl:2,ol:2,price:4700,lbl:'البنزين'},
+ {id:'gp',name:'الغاز',en:'GPL',c:'#16b3b3',nl:2,ol:2,price:1200,lbl:'الغاز'}];
+const ICON={b:'<svg viewBox="0 0 24 24"><path d="M9 3h6v3l2 2v12a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8l2-2z"/></svg>',
+ c:'<svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></svg>',
+ o:'<svg viewBox="0 0 24 24"><path d="M10 3h4v3l3 3v11H7V9l3-3zM7 13h10"/></svg>',
+ g:'<svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"/></svg>',
+ x:'<svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v9l-9 5-9-5zM3 8l9 5 9-5"/></svg>'};
+const STOCK=[
+ {id:'bt',name:'قرعة غاز',c:'#b9783a',p:20,i:'b'},
+ {id:'cd',name:'بطاقة نفطال',c:'#f5b81c',p:1,i:'c'},
+ {id:'ol',name:'زيت 15*40',c:'#e5534b',p:50,i:'o'},
+ {id:'gl',name:'غلاسيور بيدون',c:'#12b0c9',p:65,i:'g'},
+ {id:'bx',name:'صناديق 20*50',c:'#2b7de0',p:45,i:'x'}];
+let ops=0,upd='--:--';
+
+function rowsHTML(g,kind,n){let h='';for(let i=1;i<=n;i++)h+=`<div class="r"><b class="n">${i}</b><input type="number" inputmode="decimal" step="any" id="${g.id}-${kind}-${i}" data-k="${g.id}-${kind}" value="" aria-label="${kind=='n'?'جديد':'قديم'} ${i}"></div>`;return h}
+$('app').innerHTML=FUELS.map(g=>`<section class="sec" style="--c:${g.c}"><div class="sec-h"><i></i><h2>${g.name} (${g.en})</h2><small>جديد – قديم – الفرق</small></div>
+<div class="cols">
+<div class="tbl new"><h3>${g.name} جديد <em>${g.en}</em></h3><div class="rows">${rowsHTML(g,'n',g.nl)}</div><div class="sum"><span>النتيجة</span><b class="n" id="${g.id}-ns">0</b></div></div>
+<div class="tbl old"><h3>${g.name} قديم <em>${g.en}</em></h3><div class="rows">${rowsHTML(g,'o',g.ol)}</div><div class="sum"><span>النتيجة</span><b class="n" id="${g.id}-os">0</b></div></div>
+<div class="tbl diff"><h3>فرق ${g.name}</h3>
+<div class="drow"><span>${g.name} جديد</span><input readonly class="n" id="${g.id}-nv" value="0"></div>
+<div class="drow"><span>${g.name} قديم</span><input readonly class="n" id="${g.id}-ov" value="0"></div>
+<div class="drow"><span>الطرح (جديد − قديم)</span><input readonly class="n" id="${g.id}-df" value="0"></div>
+<div class="drow"><span>× سعر ${g.lbl}</span><input type="number" inputmode="decimal" step="any" id="${g.id}-pr" value="${g.price}"></div>
+<div class="res"><span>النتيجة النهائية</span><b class="n" id="${g.id}-fin">0</b><small>دج</small></div></div>
+</div></section>`).join('')+
+`<section class="sec" style="--c:#f5b81c"><div class="sec-h"><i></i><h2>المخزون والمنتجات</h2><small>الكمية × السعر</small></div><div class="stock">`+
+STOCK.map(s=>`<div class="item" style="--c:${s.c}"><h3>${ICON[s.i]}${s.name}</h3><div class="two"><div><label for="${s.id}-q">الكمية</label><input type="number" inputmode="decimal" step="any" id="${s.id}-q" value=""></div><div><label for="${s.id}-p">السعر</label><input type="number" inputmode="decimal" step="any" id="${s.id}-p" value="${s.p}"></div></div><div class="sum"><span>النتيجة</span><b class="n" id="${s.id}-r">0</b></div></div>`).join('')+`</div></section>`;
+$('glist').innerHTML=FUELS.map(g=>`<div class="gi"><span><i style="background:${g.c}"></i>${g.name} (${g.en})</span><b class="n" id="g-${g.id}">0</b></div>`).join('')+
+`<div class="gi sub2"><span>مجموع الوقود</span><b class="n" id="g-fuel">0</b></div>`+
+STOCK.map(s=>`<div class="gi"><span><i style="background:${s.c}"></i>${s.name}</span><b class="n" id="g-${s.id}">0</b></div>`).join('')+
+`<div class="gi sub2"><span>مجموع المخزون</span><b class="n" id="g-stock">0</b></div>`;
+
+const sumK=k=>[...document.querySelectorAll(`[data-k="${k}"]`)].reduce((a,i)=>a+num(i.value),0);
+let calc={};
+function recalc(){
+ let fuel=0,stock=0;calc={fuel:{},stock:{}};
+ FUELS.forEach(g=>{const nw=sumK(g.id+'-n'),od=sumK(g.id+'-o'),df=nw-od,fin=df*num($(g.id+'-pr').value);
+  $(g.id+'-ns').textContent=fmt(nw);$(g.id+'-os').textContent=fmt(od);
+  $(g.id+'-nv').value=fmt(nw);$(g.id+'-ov').value=fmt(od);$(g.id+'-df').value=fmt(df);
+  $(g.id+'-fin').textContent=fmt(fin);$('g-'+g.id).textContent=fmt(fin);
+  calc.fuel[g.id]={nw,od,df,price:num($(g.id+'-pr').value),fin};fuel+=fin});
+ STOCK.forEach(s=>{const q=num($(s.id+'-q').value),p=num($(s.id+'-p').value),r=q*p;
+  $(s.id+'-r').textContent=fmt(r);$('g-'+s.id).textContent=fmt(r);calc.stock[s.id]={q,p,r};stock+=r});
+ const tot=fuel+stock;calc.fuelT=fuel;calc.stockT=stock;calc.tot=tot;
+ $('g-fuel').textContent=fmt(fuel);$('g-stock').textContent=fmt(stock);$('gTot').textContent=fmt(tot);
+ $('sTot').textContent=fmt(tot);$('sFuel').textContent=fmt(fuel);$('sStock').textContent=fmt(stock);$('sOps').textContent=ops;$('sUpd').textContent=upd;
+}
+const fields=()=>[...document.querySelectorAll('input:not([readonly])')];
+function snapshot(){const v={};fields().forEach(i=>v[i.id]=i.value);return{v,notes:$('notes').value,ops,upd,saved:$('savedAt').dataset.t||''}}
+function persist(manual){try{localStorage.setItem(KEY,JSON.stringify(snapshot()));return true}catch(e){return false}}
+function stamp(){upd=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}
+function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2200)}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY)||'null');if(!d)return;
+ Object.entries(d.v||{}).forEach(([k,x])=>{const e=$(k);if(e)e.value=x});$('notes').value=d.notes||'';ops=d.ops||0;upd=d.upd||'--:--';
+ if(d.saved){$('savedAt').textContent='آخر حفظ: '+d.saved}}catch(e){}}
+
+document.addEventListener('input',e=>{if(e.target.matches('input,textarea')&&!e.target.readOnly){ops++;stamp();recalc();persist()}});
+$('bSave').onclick=()=>{const t=new Date().toLocaleString('ar-DZ');$('savedAt').dataset.t=t;const ok=persist(true);$('savedAt').textContent=ok?'آخر حفظ: '+t:'تعذّر الحفظ في هذا المتصفح';toast(ok?'تم حفظ البيانات':'تعذّر الحفظ');};
+$('bPdf').onclick=()=>window.print();
+$('bClr').onclick=()=>$('modal').classList.add('on');
+$('no').onclick=()=>$('modal').classList.remove('on');
+$('yes').onclick=()=>{fields().forEach(i=>{const m=i.id.match(/^(gz|es|gp)-pr$/);const f=FUELS.find(g=>m&&g.id==m[1]);const s=STOCK.find(s=>i.id==s.id+'-p');i.value=f?f.price:s?s.p:''});
+ $('notes').value='';ops=0;upd='--:--';$('savedAt').textContent='لم يتم الحفظ بعد';delete $('savedAt').dataset.t;recalc();persist();$('modal').classList.remove('on');toast('تم مسح جميع البيانات')};
+$('bXls').onclick=()=>{const e=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+ let r=`<tr><th colspan=5>محطة نفطال قاسم مشطن – علاء الدين – ${new Date().toLocaleDateString('ar-DZ')}</th></tr><tr><th>الوقود</th><th>جديد</th><th>قديم</th><th>الفرق</th><th>السعر</th><th>النتيجة النهائية</th></tr>`;
+ FUELS.forEach(g=>{const c=calc.fuel[g.id];r+=`<tr><td>${g.name} (${g.en})</td><td>${c.nw}</td><td>${c.od}</td><td>${c.df}</td><td>${c.price}</td><td>${c.fin}</td></tr>`});
+ r+=`<tr><td><b>مجموع الوقود</b></td><td></td><td></td><td></td><td></td><td><b>${calc.fuelT}</b></td></tr><tr><th>المخزون</th><th>الكمية</th><th>السعر</th><th>النتيجة</th></tr>`;
+ STOCK.forEach(s=>{const c=calc.stock[s.id];r+=`<tr><td>${s.name}</td><td>${c.q}</td><td>${c.p}</td><td>${c.r}</td></tr>`});
+ r+=`<tr><td><b>مجموع المخزون</b></td><td></td><td></td><td><b>${calc.stockT}</b></td></tr><tr><td><b>المجموع الكلي الشامل (دج)</b></td><td></td><td></td><td><b>${calc.tot}</b></td></tr><tr><td>عدد العمليات</td><td>${ops}</td></tr><tr><td>ملاحظات</td><td colspan=4>${e($('notes').value)}</td></tr>`;
+ const html=`<html dir="rtl" xmlns:x="urn:schemas-microsoft-com:office:excel"><head><meta charset="UTF-8"></head><body><table border="1">${r}</table>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').catch(err => {
+      console.warn('تعذر تفعيل وضع العمل دون إنترنت:', err);
+    });
+  });
+}
+</script>
+
+</body></html>`;
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+html],{type:'application/vnd.ms-excel;charset=utf-8'}));
+ a.download='naftal-'+new Date().toISOString().slice(0,10)+'.xls';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);toast('تم تصدير ملف Excel')};
+function tick(){const d=new Date();$('clk').textContent=d.toLocaleTimeString('en-GB');$('dte').textContent=d.toLocaleDateString('ar-DZ',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}
+tick();setInterval(tick,1000);load();recalc();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').catch(err => {
+      console.warn('تعذر تفعيل وضع العمل دون إنترنت:', err);
+    });
+  });
+}
+</script>
+
+</body>
+</html>
